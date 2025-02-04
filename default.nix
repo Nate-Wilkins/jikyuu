@@ -33,7 +33,8 @@
       doCheck                                     = false; # Enabling is Impure since postFixup isn't accounted for.
       postFixup                                   = ''
         wrapProgram "$out/bin/${name}" \
-          --set PATH ${lib.makeBinPath [ toolchain ]}
+          --set PATH ${lib.makeBinPath [ toolchain ]} \
+          --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [ pkgs.openssl ]}
       '';
     })
   )

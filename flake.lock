@@ -8,9 +8,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": [
-          "systems"
-        ]
+        "systems": "systems"
       },
       "locked": {
         "lastModified": 1712042312,
@@ -35,11 +33,11 @@
         "rust-analyzer-src": "rust-analyzer-src"
       },
       "locked": {
-        "lastModified": 1712038998,
-        "narHash": "sha256-bVIEz07/SLxPRRo+1G0cUd26KhoCj8yQc8myhf/93FM=",
+        "lastModified": 1738650687,
+        "narHash": "sha256-1tvCUR1+/F3IT1K4QHTcEO+vsip/P1iluPIttX57Ry8=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "b1b59b4d908d3e64a7e923a7b434e94e03626ec0",
+        "rev": "37a1f29ebf98fbbac667730edc5dab4ebe2e3954",
         "type": "github"
       },
       "original": {
@@ -50,16 +48,14 @@
     },
     "flake-utils": {
       "inputs": {
-        "systems": [
-          "systems"
-        ]
+        "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1710146030,
-        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
         "type": "github"
       },
       "original": {
@@ -99,9 +95,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": [
-          "systems"
-        ]
+        "systems": "systems_3"
       },
       "locked": {
         "lastModified": 1712042482,
@@ -142,7 +136,6 @@
         "gitignore": "gitignore",
         "jikyuu": "jikyuu",
         "nixpkgs": "nixpkgs",
-        "systems": "systems",
         "task-documentation": "task-documentation",
         "task-runner": "task-runner"
       }
@@ -150,11 +143,11 @@
     "rust-analyzer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1712001933,
-        "narHash": "sha256-O8Xnw/qvo827npopZeyDrp4/WrYGm7QQg0Dz/HgheL0=",
+        "lastModified": 1738591430,
+        "narHash": "sha256-Q4tPO6rH/q41IZG+NGy/Pjd2RW/bRDVjVjBh9LaVWE4=",
         "owner": "rust-lang",
         "repo": "rust-analyzer",
-        "rev": "23dd54b010ec0013438e097b17fe2fd47628fb28",
+        "rev": "13c17db07b1201e3c460b4cc0ee49ac4d0ace0e5",
         "type": "github"
       },
       "original": {
@@ -168,7 +161,61 @@
       "flake": false,
       "locked": {
         "lastModified": 1,
+        "narHash": "sha256-yJg569/Wc8hgG64XgA72/nLsZthk+InI5N+Hhmcc+kA=",
+        "path": "./flake.systems.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flake.systems.nix",
+        "type": "path"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1,
         "narHash": "sha256-0ig5cvuDRU7oEKzN5Q7u+OLFlLijdwhsWWXu05l8rOU=",
+        "path": "./flake.systems.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flake.systems.nix",
+        "type": "path"
+      }
+    },
+    "systems_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-yJg569/Wc8hgG64XgA72/nLsZthk+InI5N+Hhmcc+kA=",
+        "path": "./flake.systems.nix",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flake.systems.nix",
+        "type": "path"
+      }
+    },
+    "systems_5": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-yJg569/Wc8hgG64XgA72/nLsZthk+InI5N+Hhmcc+kA=",
         "path": "./flake.systems.nix",
         "type": "path"
       },
@@ -197,9 +244,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": [
-          "systems"
-        ]
+        "systems": "systems_4"
       },
       "locked": {
         "lastModified": 1712048513,
@@ -236,9 +281,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": [
-          "systems"
-        ],
+        "systems": "systems_5",
         "task-documentation": [
           "task-documentation"
         ]

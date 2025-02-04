@@ -2,13 +2,9 @@
   description                                                 = "Jikyuu";
 
   inputs                                                      = {
-    systems.url                                               = "path:./flake.systems.nix";
-    systems.flake                                             = false;
-
     nixpkgs.url                                               = "github:NixOS/nixpkgs/23.11";
 
     flake-utils.url                                           = "github:numtide/flake-utils";
-    flake-utils.inputs.systems.follows                        = "systems";
 
     gitignore.url                                             = "github:hercules-ci/gitignore.nix";
     gitignore.inputs.nixpkgs.follows                          = "nixpkgs";
@@ -17,18 +13,15 @@
     fenix.inputs.nixpkgs.follows                              = "nixpkgs";
 
     asciinema-automation.url                                  = "github:Nate-Wilkins/asciinema-automation/1.0.1";
-    asciinema-automation.inputs.systems.follows               = "systems";
     asciinema-automation.inputs.nixpkgs.follows               = "nixpkgs";
     asciinema-automation.inputs.flake-utils.follows           = "flake-utils";
 
     jikyuu.url                                                = "github:Nate-Wilkins/jikyuu/1.0.1";
-    jikyuu.inputs.systems.follows                             = "systems";
     jikyuu.inputs.nixpkgs.follows                             = "nixpkgs";
     jikyuu.inputs.flake-utils.follows                         = "flake-utils";
     jikyuu.inputs.fenix.follows                               = "fenix";
 
     task-documentation.url                                    = "gitlab:ox_os/task-documentation/3.0.1";
-    task-documentation.inputs.systems.follows                 = "systems";
     task-documentation.inputs.nixpkgs.follows                 = "nixpkgs";
     task-documentation.inputs.flake-utils.follows             = "flake-utils";
     task-documentation.inputs.gitignore.follows               = "gitignore";
@@ -37,7 +30,6 @@
     task-documentation.inputs.jikyuu.follows                  = "jikyuu";
 
     task-runner.url                                           = "gitlab:ox_os/task-runner/1.0.0";
-    task-runner.inputs.systems.follows                        = "systems";
     task-runner.inputs.nixpkgs.follows                        = "nixpkgs";
     task-runner.inputs.flake-utils.follows                    = "flake-utils";
     task-runner.inputs.gitignore.follows                      = "gitignore";
