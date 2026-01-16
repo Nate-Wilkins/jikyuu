@@ -2,7 +2,7 @@
   description                                                 = "Jikyuu";
 
   inputs                                                      = {
-    systems.url                                               = "path:./flake.systems.nix";
+    systems.url                                               = "path:flake.systems.nix";
     systems.flake                                             = false;
 
     nixpkgs.url                                               = "github:NixOS/nixpkgs/23.11";

@@ -167,11 +167,11 @@
     "systems": {
       "flake": false,
       "locked": {
-        "path": "./flake.systems.nix",
+        "path": "flake.systems.nix",
         "type": "path"
       },
       "original": {
-        "path": "./flake.systems.nix",
+        "path": "flake.systems.nix",
         "type": "path"
       },
       "parent": []
