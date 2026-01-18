@@ -1,4 +1,4 @@
-{ pkgs, taskRunner, toolchain, ... }: (
+{ pkgs, toolchain, ... }: (
   let
     #
     # Run help.
@@ -49,11 +49,9 @@
       name                                                   = "docs";
       dependencies                                           = with pkgs; [
         coreutils           # /bin/echo  # /bin/cp
-        task-documentation  # /bin/alex
       ];
       isolate                                                = false;
       src                                                    = with pkgs; ''
-        ${task-documentation}/bin/alex generate
         ${coreutils}/bin/cp ./docs/README.md ./README.md
       '';
     };
@@ -73,6 +71,8 @@
           --experimental-features 'nix-command flakes' \
           --show-trace \
           --verbose \
+          --option max-jobs 8 \
+          --option cores 2 \
           --option eval-cache false \
           -L \
           "."
