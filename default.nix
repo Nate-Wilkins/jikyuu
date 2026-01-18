@@ -20,11 +20,14 @@
       nativeBuildInputs                           = with pkgs; [
         makeWrapper
         pkg-config
-        openssl
+        autoPatchelfHook
         toolchain
       ];
+      buildInputs = with pkgs; [
+        openssl
+        stdenv.cc.cc.lib
+      ];
       CARGO                                       = "${toolchain}/bin/cargo";
-      PKG_CONFIG_PATH                             = "${pkgs.openssl.dev}/lib/pkgconfig";
 
       cargoSha256                                 = "sha256-0hfmV4mbr3l86m0X7EMYTOu/b+BjueVEbbyQz0KgOFY=";
       cargoLock.lockFile                          = ./Cargo.lock;

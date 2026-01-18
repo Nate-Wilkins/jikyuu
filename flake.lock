@@ -8,7 +8,9 @@
         "flake-utils": [
           "flake-utils"
         ],
-        "jikyuu": [],
+        "jikyuu": [
+          "jikyuu"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -20,16 +22,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1768702199,
-        "narHash": "sha256-m7Rd9GAtjia8ETjqwkNqaBxM287hYyPOUgadWxxy/IE=",
+        "lastModified": 1768702919,
+        "narHash": "sha256-GJdwlW2w5ije+1ZUmBm5eywTMktD+TmuZvRRYVu/ngg=",
         "owner": "Nate-Wilkins",
         "repo": "asciinema-automation",
-        "rev": "c48efb7570e5cd82cda1be3358e2a77ac4b1117d",
+        "rev": "f8095a8a122d4641b95a60ac022833e782c8ea7c",
         "type": "github"
       },
       "original": {
         "owner": "Nate-Wilkins",
-        "ref": "2.0.6",
+        "ref": "2.0.7",
         "repo": "asciinema-automation",
         "type": "github"
       }
@@ -44,11 +46,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1768632427,
-        "narHash": "sha256-Y6kP10exkn5UiK9ead2Gky8TFsFZSsyT4f69DMKm0Wo=",
+        "lastModified": 1768718851,
+        "narHash": "sha256-4IHUR+T/jScTlmw2mu5upRiPzJlv+LO7XGbvosumb0A=",
         "owner": "nix-community",
         "repo": "fenix",
-        "rev": "edd560269f0d9ad75bd3da292ce4d9d27efdd22a",
+        "rev": "80677971c9d17967b7d14649161f6f426b68e769",
         "type": "github"
       },
       "original": {
@@ -77,6 +79,42 @@
         "type": "github"
       }
     },
+    "jikyuu": {
+      "inputs": {
+        "asciinema-automation": [
+          "asciinema-automation"
+        ],
+        "fenix": [
+          "fenix"
+        ],
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-analyzer-src": [
+          "rust-analyzer-src"
+        ],
+        "systems": [
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1768702742,
+        "narHash": "sha256-7/IJLuWAJ4Q7Jkz+mZoTEtmisXpIMr8+wb1jCnWE4lo=",
+        "owner": "Nate-Wilkins",
+        "repo": "jikyuu",
+        "rev": "041ed1ddcb823785e374f7717a1524ba7900473f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Nate-Wilkins",
+        "ref": "2.0.4",
+        "repo": "jikyuu",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1768305791,
@@ -98,9 +136,12 @@
         "asciinema-automation": "asciinema-automation",
         "fenix": "fenix",
         "flake-utils": "flake-utils",
+        "jikyuu": "jikyuu",
         "nixpkgs": "nixpkgs",
         "rust-analyzer-src": "rust-analyzer-src",
-        "systems": "systems"
+        "systems": "systems",
+        "task-documentation": "task-documentation",
+        "task-runner": "task-runner"
       }
     },
     "rust-analyzer-src": {
@@ -131,6 +172,88 @@
         "type": "path"
       },
       "parent": []
+    },
+    "task-documentation": {
+      "inputs": {
+        "asciinema-automation": [
+          "asciinema-automation"
+        ],
+        "fenix": [
+          "fenix"
+        ],
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "jikyuu": [],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-analyzer-src": [
+          "rust-analyzer-src"
+        ],
+        "systems": [
+          "systems"
+        ],
+        "task-runner": [
+          "task-runner"
+        ]
+      },
+      "locked": {
+        "lastModified": 1768748977,
+        "narHash": "sha256-sSzL5KSVjpJrlVogVpvgSG1FxkDRNSXc9XFxYUTR5ZI=",
+        "owner": "ox_os",
+        "repo": "task-documentation",
+        "rev": "09235abdb47ddaa7993aab2f254b2480a365039b",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "ox_os",
+        "ref": "5.0.2",
+        "repo": "task-documentation",
+        "type": "gitlab"
+      }
+    },
+    "task-runner": {
+      "inputs": {
+        "asciinema-automation": [
+          "asciinema-automation"
+        ],
+        "fenix": [
+          "fenix"
+        ],
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "jikyuu": [
+          "jikyuu"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-analyzer-src": [
+          "rust-analyzer-src"
+        ],
+        "systems": [
+          "systems"
+        ],
+        "task-documentation": [
+          "task-documentation"
+        ]
+      },
+      "locked": {
+        "lastModified": 1768748024,
+        "narHash": "sha256-Jdb4X5UiD8ZuWHkvo3MW3eun/6av0DgI0omJQ8GoK8M=",
+        "owner": "ox_os",
+        "repo": "task-runner",
+        "rev": "731ca2366f1e3d0fd91f1ba4c065b611ad9b6a9d",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "ox_os",
+        "ref": "4.0.1",
+        "repo": "task-runner",
+        "type": "gitlab"
+      }
     }
   },
   "root": "root",
