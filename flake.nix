@@ -10,6 +10,10 @@
     flake-utils.url                                           = "github:numtide/flake-utils";
     flake-utils.inputs.systems.follows                        = "systems";
 
+    fenix.url                                                 = "github:nix-community/fenix";
+    fenix.inputs.nixpkgs.follows                              = "nixpkgs";
+    fenix.inputs.rust-analyzer-src.follows                    = "rust-analyzer-src";
+
     # task-documentation.url                                    = "gitlab:ox_os/task-documentation/3.0.1";
     # task-documentation.inputs.systems.follows                 = "systems";
     # task-documentation.inputs.nixpkgs.follows                 = "nixpkgs";
@@ -32,16 +36,22 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Transatives
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-    gitignore.url                                             = "github:hercules-ci/gitignore.nix";
-    gitignore.inputs.nixpkgs.follows                          = "nixpkgs";
+    # rust-analyzer-src.url                                     = "github:rust-lang/rust-analyzer/nightly";
+    # jikyuu.url                                                = "github:Nate-Wilkins/jikyuu/1.0.1";
 
-    fenix.url                                                 = "github:nix-community/fenix";
-    fenix.inputs.nixpkgs.follows                              = "nixpkgs";
+    # gitignore.url                                             = "github:hercules-ci/gitignore.nix";
+    # gitignore.inputs.nixpkgs.follows                          = "nixpkgs";
 
-    asciinema-automation.url                                  = "github:Nate-Wilkins/asciinema-automation/2.0.2";
-    asciinema-automation.inputs.systems.follows               = "systems";
-    asciinema-automation.inputs.nixpkgs.follows               = "nixpkgs";
-    asciinema-automation.inputs.flake-utils.follows           = "flake-utils";
+    rust-analyzer-src.url                                       = "github:rust-lang/rust-analyzer/nightly";
+    rust-analyzer-src.flake                                     = false;
+
+    asciinema-automation.url                                    = "github:Nate-Wilkins/asciinema-automation/2.0.5";
+    asciinema-automation.inputs.systems.follows                 = "systems";
+    asciinema-automation.inputs.nixpkgs.follows                 = "nixpkgs";
+    asciinema-automation.inputs.flake-utils.follows             = "flake-utils";
+
+    # task-documentation.url                                    = "gitlab:ox_os/task-documentation/3.0.1";
+    # task-runner.url                                           = "gitlab:ox_os/task-runner/4.0.0";
   };
 
   outputs                                           = {
