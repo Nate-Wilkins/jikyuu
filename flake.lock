@@ -8,9 +8,7 @@
         "flake-utils": [
           "flake-utils"
         ],
-        "jikyuu": [
-          "jikyuu"
-        ],
+        "jikyuu": [],
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -79,42 +77,6 @@
         "type": "github"
       }
     },
-    "jikyuu": {
-      "inputs": {
-        "asciinema-automation": [
-          "asciinema-automation"
-        ],
-        "fenix": [
-          "fenix"
-        ],
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-analyzer-src": [
-          "rust-analyzer-src"
-        ],
-        "systems": [
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1768702742,
-        "narHash": "sha256-7/IJLuWAJ4Q7Jkz+mZoTEtmisXpIMr8+wb1jCnWE4lo=",
-        "owner": "Nate-Wilkins",
-        "repo": "jikyuu",
-        "rev": "041ed1ddcb823785e374f7717a1524ba7900473f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Nate-Wilkins",
-        "ref": "2.0.4",
-        "repo": "jikyuu",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1768305791,
@@ -136,7 +98,6 @@
         "asciinema-automation": "asciinema-automation",
         "fenix": "fenix",
         "flake-utils": "flake-utils",
-        "jikyuu": "jikyuu",
         "nixpkgs": "nixpkgs",
         "rust-analyzer-src": "rust-analyzer-src",
         "systems": "systems",
@@ -224,9 +185,7 @@
         "flake-utils": [
           "flake-utils"
         ],
-        "jikyuu": [
-          "jikyuu"
-        ],
+        "jikyuu": [],
         "nixpkgs": [
           "nixpkgs"
         ],

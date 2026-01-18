@@ -26,7 +26,7 @@
     task-runner.inputs.flake-utils.follows                               = "flake-utils";
     task-runner.inputs.fenix.follows                                     = "fenix";
     task-runner.inputs.asciinema-automation.follows                      = "asciinema-automation";
-    task-runner.inputs.jikyuu.follows                                    = "jikyuu";
+    task-runner.inputs.jikyuu.follows                                    = "";
     task-runner.inputs.rust-analyzer-src.follows                         = "rust-analyzer-src";
     task-runner.inputs.task-documentation.follows                        = "task-documentation";
 
@@ -38,16 +38,8 @@
     asciinema-automation.inputs.nixpkgs.follows                          = "nixpkgs";
     asciinema-automation.inputs.flake-utils.follows                      = "flake-utils";
     asciinema-automation.inputs.fenix.follows                            = "fenix";
-    asciinema-automation.inputs.jikyuu.follows                           = "jikyuu";
+    asciinema-automation.inputs.jikyuu.follows                           = "";
     asciinema-automation.inputs.rust-analyzer-src.follows                = "rust-analyzer-src";
-
-    jikyuu.url                                                           = "github:Nate-Wilkins/jikyuu/2.0.4";
-    jikyuu.inputs.systems.follows                                        = "systems";
-    jikyuu.inputs.nixpkgs.follows                                        = "nixpkgs";
-    jikyuu.inputs.flake-utils.follows                                    = "flake-utils";
-    jikyuu.inputs.fenix.follows                                          = "fenix";
-    jikyuu.inputs.asciinema-automation.follows                           = "asciinema-automation";
-    jikyuu.inputs.rust-analyzer-src.follows                              = "rust-analyzer-src";
 
     rust-analyzer-src.url                                                = "github:rust-lang/rust-analyzer/nightly";
     rust-analyzer-src.flake                                              = false;
