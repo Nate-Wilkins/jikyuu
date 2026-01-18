@@ -2,27 +2,34 @@
   "nodes": {
     "asciinema-automation": {
       "inputs": {
+        "fenix": [
+          "fenix"
+        ],
         "flake-utils": [
           "flake-utils"
         ],
+        "jikyuu": [],
         "nixpkgs": [
           "nixpkgs"
+        ],
+        "rust-analyzer-src": [
+          "rust-analyzer-src"
         ],
         "systems": [
           "systems"
         ]
       },
       "locked": {
-        "lastModified": 1768701558,
-        "narHash": "sha256-6UCfpFodT0HyAhgvTLG61xlnRCnmb0FYoG4EDw31Amk=",
+        "lastModified": 1768702199,
+        "narHash": "sha256-m7Rd9GAtjia8ETjqwkNqaBxM287hYyPOUgadWxxy/IE=",
         "owner": "Nate-Wilkins",
         "repo": "asciinema-automation",
-        "rev": "f9d1d4c325a74a032c4b488cffbc21a8d7c843c1",
+        "rev": "c48efb7570e5cd82cda1be3358e2a77ac4b1117d",
         "type": "github"
       },
       "original": {
         "owner": "Nate-Wilkins",
-        "ref": "2.0.5",
+        "ref": "2.0.6",
         "repo": "asciinema-automation",
         "type": "github"
       }

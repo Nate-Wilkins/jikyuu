@@ -36,19 +36,19 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Transatives
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-    # rust-analyzer-src.url                                     = "github:rust-lang/rust-analyzer/nightly";
-    # jikyuu.url                                                = "github:Nate-Wilkins/jikyuu/1.0.1";
-
     # gitignore.url                                             = "github:hercules-ci/gitignore.nix";
     # gitignore.inputs.nixpkgs.follows                          = "nixpkgs";
 
-    rust-analyzer-src.url                                       = "github:rust-lang/rust-analyzer/nightly";
-    rust-analyzer-src.flake                                     = false;
-
-    asciinema-automation.url                                    = "github:Nate-Wilkins/asciinema-automation/2.0.5";
+    asciinema-automation.url                                    = "github:Nate-Wilkins/asciinema-automation/2.0.6";
     asciinema-automation.inputs.systems.follows                 = "systems";
     asciinema-automation.inputs.nixpkgs.follows                 = "nixpkgs";
     asciinema-automation.inputs.flake-utils.follows             = "flake-utils";
+    asciinema-automation.inputs.fenix.follows                   = "fenix";
+    asciinema-automation.inputs.jikyuu.follows                  = "";
+    asciinema-automation.inputs.rust-analyzer-src.follows       = "rust-analyzer-src";
+
+    rust-analyzer-src.url                                       = "github:rust-lang/rust-analyzer/nightly";
+    rust-analyzer-src.flake                                     = false;
 
     # task-documentation.url                                    = "gitlab:ox_os/task-documentation/3.0.1";
     # task-runner.url                                           = "gitlab:ox_os/task-runner/4.0.0";
