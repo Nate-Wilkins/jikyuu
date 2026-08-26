@@ -31,6 +31,7 @@
 
       cargoSha256                                 = "sha256-0hfmV4mbr3l86m0X7EMYTOu/b+BjueVEbbyQz0KgOFY=";
       cargoLock.lockFile                          = ./Cargo.lock;
+
       meta                                        = { };
 
       doCheck                                     = false; # Enabling is Impure since postFixup isn't accounted for.
